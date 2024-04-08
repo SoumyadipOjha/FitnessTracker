@@ -15,7 +15,8 @@ abbr {
     cursor: pointer;
     text-decoration: none;
 }
-abbr:hover{
+
+abbr:hover {
     cursor: pointer;
 }
 
@@ -50,7 +51,6 @@ abbr:hover::after {
 }
 
 #progress {
-
     bottom: 22px;
     right: 22px;
     border-radius: 50%;
@@ -67,7 +67,6 @@ abbr:hover::after {
     outline: none;
     color: #fff;
     transition: background .15s ease;
-
 }
 
 .dot {
@@ -104,10 +103,6 @@ abbr:hover::after {
     background: conic-gradient(rgb(105, 105, 195) 360deg, rgb(202, 220, 255) 360deg);
 }
 
-.circular-progress::before:hover {
-    background-color: conic-gradient(rgb(130, 130, 243) 360deg);
-}
-
 .circular-progress:before {
     content: "";
     position: absolute;
@@ -125,7 +120,6 @@ abbr:hover::after {
     font-weight: bold;
     text-align: center;
     padding: 10px;
-
 }
 
 .habit-days {
@@ -139,4 +133,26 @@ abbr:hover::after {
     border-radius: 0%;
     font-size: 24px;
     padding-left: 5px;
+}
+
+/* Media Query for Phones */
+@media only screen and (max-width: 768px) {
+    .card-header {
+        font-size: 16px;
+    }
+
+    .circular-progress {
+        height: 40px;
+        width: 40px;
+        margin-left: 8px;
+        margin-right: 5px;
+    }
+
+    .value-container {
+        font-size: 10px;
+    }
+
+    .input-here {
+        font-size: 20px;
+    }
 }
